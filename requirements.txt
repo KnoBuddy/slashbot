@@ -1,0 +1,4 @@
+discord.py==2.0.1
+disnake==2.5.2
+json5==0.9.10
+asyncio==3.4.3
