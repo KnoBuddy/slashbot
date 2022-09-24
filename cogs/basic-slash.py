@@ -79,9 +79,9 @@ class Basic(commands.Cog, name="basic-slash"): # This creates a class for the Ba
             description="Embed Description", # This is the description of the embed
             color=disnake.Color.blurple() # This is the color of the embed
         )
-        embed.add_field(name="Field 1", value="Value 1") # This adds a field to the embed
-        embed.add_field(name="Field 2", value="Value 2") # This adds a field to the embed
-        embed.add_field(name="Field 3", value="Value 3") # This adds a field to the embed
+        embed.add_field(name="Field 1", value="Value 1") # This adds a field and value to the embed
+        embed.add_field(name="Field 2", value="Value 2") # This adds a field and value to the embed
+        embed.add_field(name="Field 3", value="Value 3") # This adds a field and value to the embed
         await interaction.response.send_message(embed=embed) # This sends the embed in the channel the slash command was used in
 
         # This is the second way
