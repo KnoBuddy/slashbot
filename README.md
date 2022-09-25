@@ -1,2 +1,3 @@
 # slashbot
- The source for basic discord bot tutorial
+The source for my tutorial [here](url=https://www.google.com/)
+
