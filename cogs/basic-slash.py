@@ -117,8 +117,7 @@ class Basic(commands.Cog, name="basic-slash"): # This creates a class for the Ba
     )
     async def spam(self, interaction: ApplicationCommandInteraction, option: bool) -> None:
         self.spam_bool = option
-        print(self.spam_bool)
-        if self.spam_bool == True:
+        if self.spam_bool == True: 
             await interaction.response.send_message("Spamming...")
         else:
             await interaction.response.send_message("Not spamming...")
@@ -133,5 +132,5 @@ class Basic(commands.Cog, name="basic-slash"): # This creates a class for the Ba
             print(f"Guild: {str(guild)} | Channel: {str(channel)}") # This prints the guild and channel to the console
             await channel.send(f"Guild: {str(guild)} | Channel: {str(channel)}") # This sends a message to the channel
 
-def setup(bot):
+def setup(bot): # This function is required in each cog file to add the cog to the bot
     bot.add_cog(Basic(bot))

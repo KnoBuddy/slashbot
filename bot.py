@@ -37,6 +37,17 @@ async def load_cogs():  # Cogs are like normal python files, but they are used t
                     exception = f'{type(e).__name__}: {e}'
                     print(f'Failed to reload extension {filename[:-3]}' + exception)
 
+# Events
+@bot.event
+async def on_ready(): # This event is called when the bot is ready
+    print(f'Logged in as {bot.user} (ID: {bot.user.id})') # Print that the bot is ready
+
+@bot.event
+async def on_message(message): # This event is called when a message is sent
+    if message.author.bot: # If the message was sent by a bot
+        return # Return, so the bot doesn't respond to itself
+    await bot.process_commands(message) # This is needed to make commands work
+
 # Here is an example of how create your first slash command
 @bot.slash_command(name='ping')
 async def ping(interaction: disnake.ApplicationCommandInteraction):
