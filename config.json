@@ -1,5 +1,5 @@
 {
-    "token": "<YOUR TOKEN HERE",
-    "server_id": "<SERVER ID HERE",
+    "token": "YOUR TOKEN HERE",
+    "server_id": "SERVER ID HERE",
     "announ_channel_id": "ANNOUNCEMENT CHANNEL ID HERE",
   }
